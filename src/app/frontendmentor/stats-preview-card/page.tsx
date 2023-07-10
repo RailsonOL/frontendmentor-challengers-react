@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen place-items-center justify-center p-4">
+    <main className="grid min-h-screen place-items-center justify-center p-4">
       <div className="bd-[--clr-primary-darkdesaturatedblue] overflow-hidden rounded-xl sm:grid sm:grid-flow-col">
         <div className="order-last bg-[--clr-primary-softviolet] sm:max-w-lg">
           <picture>
@@ -66,6 +66,6 @@ export default function Home() {
           Zerohora (RailsonOL)
         </Link>
       </div>
-    </div>
+    </main>
   )
 }
