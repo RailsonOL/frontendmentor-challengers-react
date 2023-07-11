@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400 700 800;
+  font-display: swap;
+  src: url('/news-homepage-assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype'),
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --clr-primary-softorange: hsl(35, 77%, 62%);
+      --clr-primary-softred: hsl(5, 85%, 63%);
+
+      --clr-neutral-offwhite: hsl(36, 100%, 99%);
+      --clr-neutral-grayishblue: hsl(233, 8%, 79%);
+      --clr-neutral-darkgrayishblue: hsl(236, 13%, 42%);
+      --clr-neutral-verydarkblue: hsl(240, 100%, 5%);
+      }
+
+      body{
+        background: var(--clr-neutral-offwhite);
+        font-family: 'Inter', sans-serif;
+        color: var(--clr-neutral-verydarkblue);
+      }
+
+      p{
+        color: var(--clr-neutral-darkgrayishblue);
+      }
+
+      h1{
+        font-size: 3.75rem;
+        line-height: 1;
+        font-weight: 800;
+      } 
+
+      h2{
+        font-size: 2.5rem;
+        line-height: 1;
+        font-weight: 700;
+      }
+
+      h3{
+        font-size: 1.3rem;
+        line-height: 1;
+        font-weight: 700;
+      }
+
+      a:hover{
+        color: var(--clr-primary-softorange);
+      }
+
+      footer > * a:has(h3):hover{
+        color: var(--clr-primary-softred);
+      }
+
+      @media (max-width: 768px) {
+        h1{
+          font-size: 2.3rem;
+        } 
+
+        h2{
+          font-size: 1.5rem;
+        }
+
+        h3{
+          font-size: 1.1rem;
+        }
+
+        body{
+          font-size: 0.9rem;
+        }
+      }
+
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+}

@@ -10,6 +10,13 @@ export default function Home() {
           category="FrontendMentor - NEWBIE"
           tecnologys={['TS', 'React', 'TailwindCSS']}
         />
+
+        <ProjectPreview
+          title="News homepage"
+          link="frontendmentor/news-homepage"
+          category="FrontendMentor - JUNIOR"
+          tecnologys={['TS', 'React', 'TailwindCSS']}
+        />
       </main>
     </div>
   )

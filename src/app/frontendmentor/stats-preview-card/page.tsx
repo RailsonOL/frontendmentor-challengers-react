@@ -14,7 +14,7 @@ export default function Home() {
             <Image
               src="/stats-preview-card-images/image-header-mobile.jpg"
               alt="Header mobile"
-              className="opacity-30"
+              className="mix-blend-multiply"
               width={654}
               height={480}
             />
