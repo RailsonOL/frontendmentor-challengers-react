@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Header() {
@@ -11,13 +12,13 @@ export default function Header() {
   return (
     <header className="col-span-2">
       <div className="flex">
-        <img src="/news-homepage-assets/images/logo.svg" alt="Logo" />
+        <Image src="/news-homepage-assets/images/logo.svg" alt="Logo" />
         <nav className="ml-auto flex gap-8">
           <button
             onClick={handleClick}
             className="absolute right-5 top-10 z-10 sm:hidden"
           >
-            <img
+            <Image
               src={
                 isOpen
                   ? '/news-homepage-assets/images/icon-menu-close.svg'

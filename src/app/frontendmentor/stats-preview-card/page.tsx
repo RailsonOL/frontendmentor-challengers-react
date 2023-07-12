@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -54,17 +53,6 @@ export default function Home() {
             </div>
           </div>
         </article>
-      </div>
-
-      <div className="attribution absolute bottom-0 left-0 right-0">
-        Challenge by
-        <Link href={'https://www.frontendmentor.io?ref=challenge'}>
-          Frontend Mentor
-        </Link>
-        . Coded by
-        <Link href={'https://github.com/RailsonOL?tab=repositories'}>
-          Zerohora (RailsonOL)
-        </Link>
       </div>
     </main>
   )

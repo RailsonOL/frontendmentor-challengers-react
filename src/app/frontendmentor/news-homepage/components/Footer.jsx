@@ -1,8 +1,6 @@
-import Link from 'next/link'
-
 export default function Footer() {
   return (
-    <footer className="col-span-2 grid gap-10 lg:grid-flow-col">
+    <footer className="col-span-2  grid gap-10 lg:grid-flow-col">
       <article className="grid max-w-fit grid-flow-col gap-4">
         <img
           src="/news-homepage-assets/images/image-retro-pcs.jpg"
@@ -45,16 +43,6 @@ export default function Footer() {
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </article>
-      <div className="attribution absolute sticky bottom-0 left-0 right-0">
-        Challenge by
-        <Link href={'https://www.frontendmentor.io?ref=challenge'}>
-          Frontend Mentor
-        </Link>
-        . Coded by
-        <Link href={'https://github.com/RailsonOL?tab=repositories'}>
-          Zerohora (RailsonOL)
-        </Link>
-      </div>
     </footer>
   )
 }
