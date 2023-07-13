@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import './style.css'
 
@@ -36,8 +36,8 @@ export default function AdviceGenerator() {
   }
 
   return (
-    <main className="grid min-h-screen items-center justify-center">
-      <div className="relative mx-4 flex flex-col items-center justify-center gap-6 rounded-xl bg-[--dark-grayish-blue] px-12 py-10">
+    <>
+      <div className="relative mx-4 mb-20 flex flex-col items-center justify-center gap-6 rounded-xl bg-[--dark-grayish-blue] px-12 py-10">
         <h1 className="text-xs uppercase tracking-[0.3em] text-[--neon-green]">
           Advice #{data?.slip.id}
         </h1>
@@ -45,7 +45,7 @@ export default function AdviceGenerator() {
           {data?.slip.advice}
         </p>
 
-        <Image
+        <img
           src="/advice-generator-app-assets/images/pattern-divider-mobile.svg"
           className="mb-4"
           alt="divider"
@@ -60,7 +60,7 @@ export default function AdviceGenerator() {
           }`}
           onClick={handleButtonClick}
         >
-          <Image
+          <img
             src="/advice-generator-app-assets/images/icon-dice.svg"
             alt="Dice"
             width={24}
@@ -68,6 +68,6 @@ export default function AdviceGenerator() {
           />
         </button>
       </div>
-    </main>
+    </>
   )
 }

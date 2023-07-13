@@ -5,7 +5,7 @@ import './style.css'
 
 export default function ExpensesChart() {
   return (
-    <div className="grid min-h-screen content-center justify-center p-2">
+    <div className="p-2">
       <main className="max-w-3xl space-y-4">
         <div className="flex rounded-2xl bg-[--soft-red] p-5 text-[--very-pale-orange]">
           <div className="flex flex-col gap-2">

@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import './style.css'
 
 export default function Home() {
   return (
-    <main className="grid min-h-screen place-items-center justify-center p-4">
+    <main className="p-4">
       <div className="bd-[--clr-primary-darkdesaturatedblue] overflow-hidden rounded-xl sm:grid sm:grid-flow-col">
         <div className="order-last bg-[--clr-primary-softviolet] sm:max-w-lg">
           <picture>
