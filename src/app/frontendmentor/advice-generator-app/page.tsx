@@ -55,7 +55,7 @@ export default function AdviceGenerator() {
 
         <button
           className={`${
-            (isLoading ? 'animate-ping ' : '') +
+            (isLoading ? 'animate-spin ' : '') +
             ' absolute -bottom-10 rounded-full bg-[--neon-green] p-5 hover:shadow-[var(--neon-green)_0px_0px_30px_0px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]'
           }`}
           onClick={handleButtonClick}

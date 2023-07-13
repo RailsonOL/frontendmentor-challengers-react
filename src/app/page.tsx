@@ -24,6 +24,13 @@ export default function Home() {
           category="FrontendMentor - JUNIOR"
           tecnologys={['TS', 'React', 'TailwindCSS']}
         />
+
+        <ProjectPreview
+          title="Expenses chart component"
+          link="frontendmentor/expenses-chart"
+          category="FrontendMentor - JUNIOR"
+          tecnologys={['TS', 'React', 'TailwindCSS']}
+        />
       </main>
     </div>
   )
