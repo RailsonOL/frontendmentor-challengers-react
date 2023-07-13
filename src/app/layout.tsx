@@ -18,8 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          inter.className +
-          ' grid min-h-screen min-h-screen content-center justify-center'
+          inter.className + ' grid min-h-screen content-center justify-center'
         }
       >
         {children}

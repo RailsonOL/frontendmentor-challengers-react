@@ -31,6 +31,13 @@ export default function Home() {
           category="FrontendMentor - JUNIOR"
           tecnologys={['TS', 'React', 'TailwindCSS']}
         />
+
+        <ProjectPreview
+          title="Sunnyside agency"
+          link="frontendmentor/sunnyside-agency"
+          category="FrontendMentor - JUNIOR"
+          tecnologys={['TS', 'React', 'TailwindCSS']}
+        />
       </main>
     </div>
   )
