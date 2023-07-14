@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+'use client'
+import { useState } from 'react'
 import {
   ArrowDown,
   Facebook,
+  Hamburger,
   Instagram,
   Logo,
   Pinterest,
@@ -10,23 +13,48 @@ import {
 import './style.css'
 
 export default function SunnysideAgency() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div className="text-center">
       <header
-        className="relative flex h-screen w-full flex-col gap-20 bg-cover bg-center p-10 text-white"
+        className="relative flex h-screen w-full flex-col gap-20 bg-cover bg-center p-10 text-white max-sm:p-4 max-sm:py-8"
         style={{
           backgroundImage: 'url(/sunny-side-images/desktop/image-header.jpg)',
         }}
       >
-        <nav className="flex max-sm:hidden">
+        <nav className="flex">
           <Logo className="h-fit w-fit self-center" />
 
-          <div className="ml-auto flex items-center gap-10">
-            <div className="cursor-pointer">About</div>
-            <div className="cursor-pointer">Services</div>
-            <div className="cursor-pointer">Projects</div>
-            <div className="cursor-pointer rounded-[2rem] bg-white p-4 px-6 font-[Fraunces] text-base font-bold uppercase text-[--very-dark-desaturated-blue] hover:bg-opacity-50 hover:text-white">
-              Contact
+          <div
+            className="ml-auto cursor-pointer fill-white sm:hidden"
+            onClick={handleClick}
+          >
+            <Hamburger />
+          </div>
+
+          {/* <div className="ml-auto flex items-center gap-10"> */}
+          <div
+            className={`${
+              isOpen ? '' : 'hidden'
+            } absolute right-4 top-32 z-10 ml-auto sm:static  sm:flex sm:bg-transparent`}
+          >
+            <div className="relative sm:hidden">
+              <div className="absolute -top-8 right-0">
+                <div className="mx-auto h-0 w-0 border-b-[40px] border-l-[40px] border-solid border-b-white border-l-transparent border-r-transparent"></div>
+              </div>
+            </div>
+            <div className="grid items-center justify-center gap-10 bg-white px-[6.6rem] py-10 text-[--very-dark-desaturated-blue] sm:grid-flow-col sm:bg-transparent sm:p-0">
+              <div className="cursor-pointer">About</div>
+              <div className="cursor-pointer">Services</div>
+              <div className="cursor-pointer">Projects</div>
+              <div className="cursor-pointer rounded-[2rem] bg-[--yellow] p-4 px-6 font-[Fraunces] text-base font-bold uppercase text-[--very-dark-desaturated-blue] hover:bg-opacity-50 hover:text-white sm:bg-white">
+                Contact
+              </div>
             </div>
           </div>
         </nav>
