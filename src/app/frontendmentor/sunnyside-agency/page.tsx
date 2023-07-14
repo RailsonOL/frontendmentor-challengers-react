@@ -69,7 +69,7 @@ export default function SunnysideAgency() {
       </header>
 
       <main className="flex flex-col">
-        <section className="flex max-sm:flex-col">
+        <div className="flex max-sm:flex-col">
           <picture className="max-sm:order-0 order-1 basis-1/2">
             <source
               media="(max-width: 640px)"
@@ -98,9 +98,9 @@ export default function SunnysideAgency() {
               Learn more
             </a>
           </article>
-        </section>
+        </div>
 
-        <section className="flex max-sm:flex-col">
+        <div className="flex max-sm:flex-col">
           <picture className="basis-1/2">
             <source
               media="(max-width: 640px)"
@@ -129,9 +129,9 @@ export default function SunnysideAgency() {
               Learn more
             </a>
           </article>
-        </section>
+        </div>
 
-        <section className="flex max-sm:flex-col">
+        <div className="flex max-sm:flex-col">
           <article className="relative basis-1/2">
             <picture>
               <source
@@ -177,7 +177,7 @@ export default function SunnysideAgency() {
               </p>
             </div>
           </article>
-        </section>
+        </div>
       </main>
 
       <section className="my-40">
