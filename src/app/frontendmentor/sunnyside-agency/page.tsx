@@ -20,7 +20,7 @@ export default function SunnysideAgency() {
   }
 
   return (
-    <div className="text-center">
+    <main className="text-center">
       <header
         className="relative flex h-screen w-full flex-col gap-20 bg-cover bg-center p-10 text-white max-sm:p-4 max-sm:py-8"
         style={{
@@ -68,7 +68,7 @@ export default function SunnysideAgency() {
         </div>
       </header>
 
-      <main className="flex flex-col">
+      <div className="flex flex-col">
         <div className="flex max-sm:flex-col">
           <picture className="max-sm:order-0 order-1 basis-1/2">
             <source
@@ -178,7 +178,7 @@ export default function SunnysideAgency() {
             </div>
           </article>
         </div>
-      </main>
+      </div>
 
       <div className="my-40">
         <h2 className="mb-20 font-[Fraunces] text-lg uppercase tracking-[0.3em] text-[--grayish-blue]">
@@ -308,6 +308,6 @@ export default function SunnysideAgency() {
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   )
 }
