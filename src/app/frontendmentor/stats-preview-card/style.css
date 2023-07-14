@@ -1,28 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    --clr-primary-verydarkblue: hsl(233, 47%, 7%); 
+    --clr-primary-darkdesaturatedblue: hsl(244, 38%, 16%);
+    --clr-primary-softviolet: hsl(277, 64%, 61%);
 
-@layer base {
-    :root {
-        --clr-primary-verydarkblue: hsl(233, 47%, 7%); 
-        --clr-primary-darkdesaturatedblue: hsl(244, 38%, 16%);
-        --clr-primary-softviolet: hsl(277, 64%, 61%);
+    --clr-neutral-slightlytranswhite: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-slightlytranswhite-stat: hsla(0, 0%, 100%, 0.6);
 
-        --clr-neutral-slightlytranswhite: hsla(0, 0%, 100%, 0.75);
-        --clr-neutral-slightlytranswhite-stat: hsla(0, 0%, 100%, 0.6);
+    --primary-font: 'Inter', sans-serif;
+    --secundary-font: 'Lexend Deca', sans-serif;
+  }
 
-        --primary-font: 'Inter', sans-serif;
-        --secundary-font: 'Lexend Deca', sans-serif;
-      }
-
-      body{
-        background: var(--clr-primary-verydarkblue);
-        font-family: var(--secundary-font);
-      }
-
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-}
+  body{
+    background: var(--clr-primary-verydarkblue);
+    font-family: var(--secundary-font);
+  }
