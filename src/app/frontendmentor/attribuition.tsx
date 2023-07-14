@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Attribution() {
   return (
-    <footer className="attribution">
+    <div className="attribution">
       Challenge by{' '}
       <Link href={'https://www.frontendmentor.io?ref=challenge'}>
         Frontend Mentor
@@ -11,6 +11,6 @@ export default function Attribution() {
       <Link href={'https://github.com/RailsonOL?tab=repositories'}>
         Zerohora (RailsonOL)
       </Link>
-    </footer>
+    </div>
   )
 }

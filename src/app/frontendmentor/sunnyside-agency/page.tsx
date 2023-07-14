@@ -180,7 +180,7 @@ export default function SunnysideAgency() {
         </div>
       </main>
 
-      <section className="my-40">
+      <div className="my-40">
         <h2 className="mb-20 font-[Fraunces] text-lg uppercase tracking-[0.3em] text-[--grayish-blue]">
           Client testimonials
         </h2>
@@ -238,7 +238,7 @@ export default function SunnysideAgency() {
             </figcaption>
           </figure>
         </div>
-      </section>
+      </div>
 
       <footer>
         <div className="grid max-sm:grid-cols-2 sm:grid-flow-col">
