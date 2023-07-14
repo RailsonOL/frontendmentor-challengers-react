@@ -4,7 +4,7 @@ export default function ThreeColumPage() {
   return (
     <main className="p-6">
       <div className="my-16 flex overflow-hidden rounded-lg max-sm:flex-col">
-        <article className="max-w-[18.6rem] space-y-8 bg-[--bright-orange] p-10">
+        <article className="space-y-8 bg-[--bright-orange] p-10 sm:max-w-[18.6rem]">
           <picture>
             <img src="/3-column-images/icon-sedans.svg" alt="Icon Sedans" />
           </picture>
@@ -21,7 +21,7 @@ export default function ThreeColumPage() {
           </div>
         </article>
 
-        <article className="max-w-[18.6rem] space-y-8 bg-[--dark-cyan] p-10">
+        <article className="space-y-8 bg-[--dark-cyan] p-10 sm:max-w-[18.6rem]">
           <picture>
             <img src="/3-column-images/icon-suvs.svg" alt="Icon SUVs" />
           </picture>
@@ -37,7 +37,7 @@ export default function ThreeColumPage() {
           </div>
         </article>
 
-        <article className="max-w-[18.6rem] space-y-8 bg-[--very-dark-cyan] p-10">
+        <article className="space-y-8 bg-[--very-dark-cyan] p-10 sm:max-w-[18.6rem]">
           <picture>
             <img src="/3-column-images/icon-luxury.svg" alt="Icon Luxury" />
           </picture>
