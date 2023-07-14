@@ -15,7 +15,7 @@ export default function ThreeColumPage() {
           </p>
 
           <div>
-            <button className="rounded-full bg-white p-3 px-6 text-[--bright-orange] sm:mt-10">
+            <button className="rounded-full border-2 border-white bg-white px-6 py-3 text-[--bright-orange] hover:bg-transparent hover:text-white sm:mt-10">
               Learn More
             </button>
           </div>
@@ -31,7 +31,7 @@ export default function ThreeColumPage() {
             Perfect for your next family vacation and off-road adventures.
           </p>
           <div>
-            <button className="rounded-full bg-white p-3 px-6 text-[--dark-cyan] sm:mt-10">
+            <button className="rounded-full border-2 border-white bg-white px-6 py-3 text-[--dark-cyan] hover:bg-transparent hover:text-white sm:mt-10">
               Learn More
             </button>
           </div>
@@ -47,7 +47,7 @@ export default function ThreeColumPage() {
             enhanced comfort of a luxury rental and arrive in style.
           </p>
           <div>
-            <button className="rounded-full bg-white p-3 px-6 text-[--very-dark-cyan] sm:mt-10">
+            <button className="rounded-full border-2 border-white bg-white px-6 py-3 text-[--very-dark-cyan] hover:bg-transparent hover:text-white sm:mt-10">
               Learn More
             </button>
           </div>
