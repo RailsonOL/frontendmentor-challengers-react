@@ -1,4 +1,5 @@
 import ProjectPreview from '../components/ProjectPreview'
+import './style.css'
 
 export default function Home() {
   return (
@@ -36,6 +37,12 @@ export default function Home() {
           title="Sunnyside agency"
           link="frontendmentor/sunnyside-agency"
           category="FrontendMentor - JUNIOR"
+          tecnologys={['TS', 'React', 'TailwindCSS']}
+        />
+        <ProjectPreview
+          title="3 Column preview card"
+          link="frontendmentor/3-column-preview-card"
+          category="FrontendMentor - NEWBIE"
           tecnologys={['TS', 'React', 'TailwindCSS']}
         />
       </main>
