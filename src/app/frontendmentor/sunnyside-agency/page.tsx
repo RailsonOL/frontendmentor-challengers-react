@@ -48,7 +48,7 @@ export default function SunnysideAgency() {
                 <div className="mx-auto h-0 w-0 border-b-[40px] border-l-[40px] border-solid border-b-white border-l-transparent border-r-transparent"></div>
               </div>
             </div>
-            <div className="grid items-center justify-center gap-10 bg-white px-[6.6rem] py-10 text-[--very-dark-desaturated-blue] sm:grid-flow-col sm:bg-transparent sm:p-0">
+            <div className="grid items-center justify-center gap-10 bg-white px-[6.6rem] py-10 text-white max-sm:text-[--very-dark-desaturated-blue] sm:grid-flow-col sm:bg-transparent sm:p-0">
               <div className="cursor-pointer">About</div>
               <div className="cursor-pointer">Services</div>
               <div className="cursor-pointer">Projects</div>
