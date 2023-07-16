@@ -1,11 +1,12 @@
-import RootLayout from '../layout'
-import Attribuition from './attribuition'
+import Attribuition from './Attribuition'
 
 export default function FMLayout({ children }: { children: React.ReactNode }) {
   return (
-    <RootLayout>
-      {children}
-      <Attribuition />
-    </RootLayout>
+    <>
+      <div className="relative grid min-h-screen content-center justify-center">
+        {children}
+        <Attribuition />
+      </div>
+    </>
   )
 }
