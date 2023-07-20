@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
 
-body {
+.container-home  {
     color: #c7d2fe;
     background: #030712;
     font-family: 'Barlow', sans-serif;
@@ -15,6 +15,24 @@ body {
   
     @media (min-width: 1024px) {
       background-image: url('/assets/home/background-home-desktop.jpg');
+    }
+}
+
+.container-destination  {
+    color: #c7d2fe;
+    background: #030712;
+    font-family: 'Barlow', sans-serif;
+
+    background-image: url('/assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      background-image: url('/assets/destination/background-destination-tablet.jpg');
+    }
+  
+    @media (min-width: 1024px) {
+      background-image: url('/assets/destination/background-destination-desktop.jpg');
     }
 }
 
@@ -34,7 +52,7 @@ h1{
 h2{
     color: #FFF;
     font-family: 'Bellefair';
-    font-size: clamp(3.5rem, 4vw, 6.25rem);
+    font-size: clamp(3.5rem, 20vw, 6.25rem);
     text-transform: uppercase;
 }
 
