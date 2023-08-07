@@ -45,12 +45,6 @@ export default function Home() {
           category="FrontendMentor - NEWBIE"
           tecnologys={['TS', 'React', 'TailwindCSS']}
         />
-        <ProjectPreview
-          title="Space tourism multi-page website"
-          link="space-tourism"
-          category="FrontendMentor - INTERMEDIATE"
-          tecnologys={['TS', 'React', 'TailwindCSS']}
-        />
       </main>
     </div>
   )
